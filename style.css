@@ -10,19 +10,23 @@ body {
 
 .section-bg {
   width: 1440px;
-  min-height: 3000px;
+  height: 100vh;
   background-color: hsl(212, 45%, 89%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .card {
   width: 350px;
-  height: 500px;
+  height: 520px;
   background-color: hsl(0, 0%, 100%);
   border-radius: 20px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 15px 15px 0 15px;
 }
 
@@ -34,6 +38,7 @@ body {
 .card-body {
   padding: 20px;
   justify-content: center;
+  height: auto;
 }
 
 .card-title {
@@ -42,16 +47,20 @@ body {
   text-align: center;
   line-height: 1.2;
   letter-spacing: 0.5px;
+  margin-bottom: 20px;
 }
 
 .card-text {
   color: hsl(220, 15%, 55%);
   font-size: 15px;
+  text-align: center;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  position: absolute;
+  bottom: 0%;
 }
 
 .attribution a {
